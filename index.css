@@ -13,6 +13,8 @@ body {
     background-color: #1F2937;
     color: white;
     align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .navbar {
@@ -79,9 +81,10 @@ body {
     background-color: gray;
 }
 
-.middle-one > .container {
+.middle-one {
     padding-top: 100px;
     padding-bottom: 100px;
+    align-items: center;
 }
 
 .middle-one > .container > p {
@@ -140,16 +143,14 @@ body {
 }
 
 .middle-one > .blurb-container {
-    padding-top: 200px;
-    padding-bottom: 200px;
     max-width: 800px;
     max-height: 400px;
-    background-clip: content-box;
     background-color: #3882F6;
     display: flex;
     justify-content: space-around;
     margin: auto;
     align-items: center;
+    border-radius: 8px;
 }
 
 #hero-title {
