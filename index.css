@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
+    margin: 0px;
 }
 
 body {
@@ -11,11 +12,14 @@ body {
 .top {
     background-color: #1F2937;
     color: white;
+    align-items: center;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .navbar > .header-logo {
@@ -37,12 +41,24 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 1000px;
     padding: 15px;
+    margin: auto;
 }
 
 .section > .section-desc {
     flex: 1;
     min-width: none;
+}
+
+#hero-main-text {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+#hero-secondary-text {
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 #sign-up-btn {
@@ -64,11 +80,15 @@ body {
 }
 
 .middle-one > .container {
-    margin: 15px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-.middle-one > .container > h1 {
+.middle-one > .container > p {
     text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
 }
 
 .middle-one > .container > .container-images {
@@ -78,25 +98,27 @@ body {
 
 .middle-one > .container > .container-images > .container-images-group {
     flex: 1;
-    max-width: 100px;
+    max-width: 150px;
     margin: 5px;
 }
 
 .middle-one > .container > .container-images > .container-images-group > .container-image {
     border-style: solid;
     border-width: 1px;
-    border-color: rgb(0, 13, 255);
+    border-color: #3882F6;
     border-radius: 25px;
-    height: 100px;
+    height: 150px;
 }
 
 .middle-one > .container > .container-images > .container-images-group > .container-image-desc {
     text-align: center;
+    padding: 5px;
 }
 
 .quote {
     background-color: lightgray;
-    padding: 15px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .quote > .container {
@@ -106,11 +128,54 @@ body {
 }
 
 .quote > .container > .quote-lines {
-    font-family: Roboto, sans-serif;
+    color: #1F2937;
+    font-weight: 100;
     font-style: italic;
-    font-size: xx-large;
+    font-size: 36px;
 }
 
 .quote > .container > .quote-author {
     text-align: right;
+    font-size: 40px;
+}
+
+.middle-one > .blurb-container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 800px;
+    max-height: 400px;
+    background-clip: content-box;
+    background-color: #3882F6;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+}
+
+#hero-title {
+    color: #E5E7EB;
+    font-size: 40px;
+    font-weight: 800;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+#hero-smalltext {
+    color: #E5E7EB;
+    font-size: 18px;
+    font-weight: 100;
+    padding-top: 0px;
+    padding-bottom: 40px;
+}
+
+#blurb-sign-up {
+    background-color: #3882F6;
+    border-color: #E5E7EB;
+    border-radius: 8px;
+    border-style: solid;
+    color: #E5E7EB;
+    font-size: 20px;
+    font-weight: 800;
+    height: 40px;
+    width: 120px;
 }
